@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c4"
+    tools:context=".ScannerActivity">
+
+    <ImageView
+        android:id="@+id/idIVCaptureImage"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="75dp"
+        android:layout_marginLeft="75dp"
+        android:layout_marginTop="75dp"
+        android:layout_marginEnd="75dp"
+        android:layout_marginRight="75dp"
+        android:src="@drawable/phoneicon" />
+
+    <TextView
+        android:id="@+id/idTVDetectedText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idIVCaptureImage"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="20dp"
+        android:gravity="center"
+        android:padding="4dp"
+        android:text="( Your Text will appear here )"
+        android:textAlignment="center"
+        android:textColor="@color/black_shape_1"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/idBtnSanp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idTVDetectedText"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="94dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/button_back"
+        android:text="Snap"
+        android:textAllCaps="false"
+        app:backgroundTint="@color/c3" />
+
+    <Button
+        android:id="@+id/idBtnDetect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idBtnSanp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/button_back"
+        android:text="Detect"
+        android:textAllCaps="false"
+        app:backgroundTint="@color/c3" />
+
+
+</RelativeLayout>
